@@ -1,6 +1,6 @@
 import ProductImages from "@/components/ProductPage/ProductImages";
 
-export default function Product({params}:{params:any}){
+export default function Product(params:any){
     const { slug } = params;
     console.log(slug)
     return(
