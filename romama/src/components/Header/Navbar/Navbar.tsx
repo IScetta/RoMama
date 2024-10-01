@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 right-0 w-full z-50 ">
-      <div className=" flex flex-row justify-end  w-screen  bg-blueDark ">
+      <div className=" flex flex-row justify-end  w-screen  bg-cherryPink ">
         <div className=" hidden sm:flex sm:flex-row sm:items-center sm:mr-32 ">
           {title.map((item, index) => {
             return (
