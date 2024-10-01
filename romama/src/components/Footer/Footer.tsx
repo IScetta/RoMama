@@ -7,7 +7,7 @@ export default function Footer (){
         <div>
 
         <div className="bg-cherryPink pl-24 h-full">
-            <div className=" p-2 pt-8">
+            <div className=" p-2 py-8">
                 <h1 className="font-display font-bold text-5xl">RoMama</h1>
             </div>
 

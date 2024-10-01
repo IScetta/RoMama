@@ -9,10 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        lightPink: "#FCDBCC",
+        lightPink: "#ffc6ab",
         cherryPink: "#FFB3BE",
         lightGreen: "#9CFF79",
-        lightOrage: "#FFAF8C",
+        lightOrage: "#ff9d73",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
