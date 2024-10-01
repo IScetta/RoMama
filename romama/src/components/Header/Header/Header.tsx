@@ -1,4 +1,3 @@
-import { GiHamburgerMenu } from "react-icons/gi";
 import Navbar from "../Navbar";
 
 export default function Header (){
