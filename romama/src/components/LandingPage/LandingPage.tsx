@@ -17,9 +17,9 @@ export default function LandingPage(){
             </div>
 
 
-            <div className="flex flex-row justify-between items-center border my-10">
-                <Link className="bg-cherryPink px-2 py-2 font-medium rounded-md" href={"/"}>Torta Personalizada</Link>                
-                <Link className="bg-cherryPink px-2 py-2 font-medium rounded-md" href={"/"}>Torta Personalizada</Link>
+            <div className="flex flex-row justify-around items-center my-10">
+                <Link className="bg-cherryPink px-2 py-2 font-semibold rounded-md" href={"/"}>Torta Personalizada</Link>                
+                <Link className="bg-cherryPink px-2 py-2 font-semibold rounded-md" href={"/"}>Torta Personalizada</Link>
             </div>
 
             <div className="flex flex-wrap mt-4 justify-between items-center">
@@ -30,7 +30,7 @@ export default function LandingPage(){
                 <CardProduct/>
                 <CardProduct/>
                 <CardProduct/>
-
+                <CardProduct/>
             </div>
 
         </div>
