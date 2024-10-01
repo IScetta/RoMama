@@ -9,10 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        lightPink: "#FCDBCC",
+        cherryPink: "#FFB3BE",
+        lightGreen: "#9CFF79",
+        lightOrage: "#FFAF8C",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        display: ['Island Moments', 'cursive'],
+      },
     },
+
   },
   plugins: [],
 };
