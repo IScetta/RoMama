@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosClose } from "react-icons/io";
@@ -28,7 +29,7 @@ const Navbar = () => {
 
         
           <div className="sm:hidden flex flex-wrap justify-between items-center bg-cherryPink p-4 w-full">
-            <button className="text-5xl font-display font-extrabold">RM</button>
+            <Link href={"/"} className="text-5xl font-display font-extrabold">RM</Link>
           <button
             onClick={() => setIsOpen(true)}
             className="text-5xl "
@@ -40,15 +41,18 @@ const Navbar = () => {
 
         {isOpen ? (
           <div className="flex flex-row">
-          <div className="flex flex-row fixed top-0 left-0 bg-cherryPink border-r-2 border-black w-[70%] h-full animate-fade-right animate-duration-500 animate-ease-linear animate-fill-both ">
+          <div className="flex flex-row fixed top-0 left-0 bg-cherryPink  w-[70%] h-full animate-fade-right animate-duration-500 animate-ease-linear animate-fill-both ">
             <div className="flex flex-col mt-10 font-bold">
               {title.map((item, index) => {
                 return (
                   <div className=" ml-8 p-2" key={index}>
-                    <button
+                    <button onClick={() => setIsOpen(!isOpen)}>
+                    <Link href={`/${item.toLowerCase() === "inicio" ? "" : item.toLowerCase()}`}
                       className="text-[20px]  hover:border-offRed"
                     >
                       {item}
+                    </Link>
+
                     </button>
                   </div>
                 );
@@ -56,12 +60,12 @@ const Navbar = () => {
             </div>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className=" text- text-5xl flex justify-center w-full font-bold"
+                className=" text- text-6xl flex justify-center w-full font-bold"
               >
                 <IoIosClose />
               </button>
           </div>
-              <button onClick={()=>setIsOpen(!isOpen)} className="flex  fixed top-0 left-[70%] backdrop-blur-[5px] w-[30%] h-full animate-fade-right animate-duration-500 animate-ease-linear animate-fill-both  ">
+              <button onClick={()=>setIsOpen(!isOpen)} className="flex bg-black/10  fixed top-0 left-[70%] backdrop-blur-[5px] w-[30%] h-full animate-fade-right animate-duration-500 animate-ease-linear animate-fill-both  ">
                 
               </button>
 

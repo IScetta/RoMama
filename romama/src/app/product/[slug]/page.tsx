@@ -1,8 +1,7 @@
 import ProductImages from "@/components/ProductPage/ProductImages";
+import { Params } from "@/types/types";
 
-interface Params {
-    slug: string;
-  }
+
 
 export default function Product({params}:{params:Params}){
     const { slug } = params;
